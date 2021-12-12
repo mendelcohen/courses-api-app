@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Course.create(name: 'Ruby on Rails', release_date: Date.new(2022, 1, 1))
+Course.create(name: 'Nursing Care', release_date: Date.new(2022, 2, 1))
