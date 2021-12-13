@@ -1,3 +1,5 @@
-{
-  courses: @courses
+@courses.map do |course| {
+  name: course.name,
+  release_date: course.release_date
 }
+end
