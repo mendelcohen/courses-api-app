@@ -1,24 +1,25 @@
-# README
+# Course API App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- A public RESTful API that provides access to all types of available courses and their release date.
 
-Things you may want to cover:
+## Clone the repository
 
-* Ruby version
+- Create a folder for the project and in your terminal `cd` into it
+- Copy and paste this command in your folder: `git clone https://github.com/mendelcohen/courses-api-app.git`
 
-* System dependencies
+## Technology and Resources
 
-* Configuration
+- Ruby 2.7.1
+- Rails 6.0.4.1
+- Documentation on Ruby installation: `https://www.ruby-lang.org/en/documentation/installation/`
+- Installing Rails: `gem install rails`. Then `bundle install`
+- Postgres: `https://www.postgresql.org/download/`
+- Create the database: `rails db:create`
+- Seed the database: `rails db:seed`
+- Now the app sould be installed with its dependencies and ready to run on your device.
 
-* Database creation
+## Open the app
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Open the app on your device: `rails s`
+- In your browser: `http://localhost:3000/api/courses`
+- You should see the courses api index.
