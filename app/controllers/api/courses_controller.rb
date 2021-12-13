@@ -18,15 +18,14 @@ class Api::CoursesController < ApplicationController
   end
 
   def show
-    @course = Course.find_by(id: params[:id])
+    @course = Course.find(params[:id])
     render "show.json.jb"
   end
 
   def update
-    @course = Course.find_by(id: params[:id])
+    @course = Course.find(params[:id])
     @course.name = params[:name] || @course.name
     @course.release_date = params[:release_date] || @course.release_date
-    render "show.json.jb"
     if @course.save
       render "show.json.jb"
     else
@@ -35,7 +34,7 @@ class Api::CoursesController < ApplicationController
   end
 
   def destroy
-    course = Course.find_by(id: params[:id])
+    course = Course.find(params[:id])
     course.destroy
     render json: { message: "COURSE DELETED"}
   end
